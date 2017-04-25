@@ -6,3 +6,7 @@
     <p><%= character.name %></p>
   </div>
 <% end %>
+<p><%= link_to 'Edit House Summary', edit_house_path(@house) %></p>
+<p><%= link_to 'Delete this House', house_path(@house),
+      method: :delete,
+    data: { confirm: 'Are you sure?' } %></p>
