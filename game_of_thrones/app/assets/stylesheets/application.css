@@ -17,6 +17,8 @@
  @font-face {
   font-family: "thrones";
   src: url('game_of_thrones.ttf') format("truetype");
+
+
 }
 
 /* assets/fonts */
@@ -28,10 +30,14 @@
 @font-face {
   font-family: "thrones";
   src: font-url('game_of_thrones.ttf') format("truetype");
+  color: white
 }
  .container {
+   background-image: url("http://static.srcdn.com/wp-content/uploads/game-of-thrones-the-iron-throne.jpg");
+   background-repeat: no-repeat;
    padding: 20px;
    text-align: center;
+   color: white
  }
 
  .crest {
@@ -42,7 +48,8 @@
 
 
 header {
-  font-size: 75px
+  font-size: 75px;
+  padding-bottom: 50px
 }
 
 .quote {
