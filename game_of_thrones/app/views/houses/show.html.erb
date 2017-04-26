@@ -3,7 +3,7 @@
 <h2>House Members:</h2>
 <% @house.characters.each do |character| %>
   <div>
-    <p><%= character.name %></p>
+    <%= link_to "#{character.name}", house_character_path(@house, character) %>
   </div>
 <% end %>
 <p><%= link_to 'Edit House Summary', edit_house_path(@house) %></p>

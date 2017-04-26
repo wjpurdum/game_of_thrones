@@ -1,0 +1,6 @@
+<h1><%= @character.name %></h1>
+<h2><%= "House: #{@character.house.name}" %></h2>
+<p><%= link_to 'Edit Character Summary', edit_house_character_path(@house) %></p>
+<p><%= link_to 'Delete this Character', house_path(@house),
+      method: :delete,
+    data: { confirm: 'Are you sure?' } %></p>

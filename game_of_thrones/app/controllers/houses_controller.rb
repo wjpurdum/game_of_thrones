@@ -12,9 +12,12 @@ class HousesController < ApplicationController
     @house = House.find(params[:id])
     @house.destroy
     flash[:notice] = " Success! The house was deleted."
-    redirect_to house_path
+    redirect_to root_path
   end
 
+  def edit
+      @house = House.find(params[:id])
+  end
 
   def update
     @house = House.find(params[:id])
