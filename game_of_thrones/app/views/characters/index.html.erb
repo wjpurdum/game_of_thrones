@@ -1,1 +1,7 @@
-
+<h1>All characters</h1>
+<% @characters.each do |character| %>
+  <div>
+    <%= @character.name %>
+    <%= @character.house.name %>
+<% end %>
+  </div>

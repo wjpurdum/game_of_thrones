@@ -4,14 +4,18 @@
     <title>GameOfThrones</title>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag "stylesheets/application.css" %>
+    <%= <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet"> %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body class='container'>
     <header>Game of Thrones</header>
+    <h3><%= link_to "Show all Houses", root_path %></h3>
     <% flash.each do |type, message| %>
       <p><%= message %></p>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
       <% end %>
     <%= yield %>
   </body>

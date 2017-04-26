@@ -16,6 +16,13 @@
 
  .container {
    padding: 20px;
+   text-align: center;
+   font-family: 'Anton', sans-serif;
+ }
+
+ .crest {
+   height: 90px;
+   width: 85px
  }
 
  @font-face {
@@ -27,4 +34,8 @@
 @font-face {
   font-family: "thrones";
   src: font-url('game_of_thrones.ttf') format("truetype");
+}
+
+header {
+  font-size: 75px
 }
